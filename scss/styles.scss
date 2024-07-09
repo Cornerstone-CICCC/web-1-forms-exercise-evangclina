@@ -15,6 +15,11 @@ form {
 
 body{
   form{
+    fieldset{
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid rgb(155, 168, 181);
+    }
     .form{
       label{
         display: block;
@@ -24,6 +29,8 @@ body{
         width: 98%;
         padding: 5px;
         margin-bottom: 8px;
+        border-radius: 3px;
+        border: 1px solid rgb(155, 168, 181);
       }
     }
     .preferences{
@@ -34,7 +41,10 @@ body{
         }
         input{
           width: 100%;
+          height: 40px;
+          padding: 5px;
           margin-bottom: 8px;
+          border: 1px solid rgb(155, 168, 181);
         }
       }
       .hobby{
@@ -44,6 +54,8 @@ body{
         }
         input{
           padding: 3px;
+          border-radius: 3px;
+          border: 1px solid rgb(155, 168, 181);
           margin-bottom: 8px;
         }
       }
@@ -57,6 +69,61 @@ body{
         }
       }
     }
-
+    .contact-preferences{
+      .contact-method{
+        label{
+          display: block;
+          margin-bottom: 5px;
+        }
+        input{
+          width: 98%;
+          padding: 5px;
+          margin-bottom: 8px;
+          border-radius: 3px;
+          border: 1px solid rgb(155, 168, 181);
+        }
+      }
+      .subscribe{
+        display: flex; 
+        flex-direction: column;
+        align-items: start;
+        input{
+          margin-bottom: 8px;
+        }
+      }
+    }
+    .preferences{
+      .gender-options{
+        display: flex;
+        flex-direction: column;
+        margin-top: 8px;
+        input{
+          margin-bottom: 8px;
+        }
+      }
+    }
+    .more-info{
+      margin-bottom: 8px;
+      textarea{
+        border-radius: 5px;
+        border: 1px solid rgb(155, 168, 181);
+      }
+    }
+    .upload-docs{
+      input{
+        border-radius: 5px;
+        border: 1px solid rgb(155, 168, 181);
+      }
+    }
+    .submission{
+      button{
+        padding: 8px; 
+        background-color: rgb(0, 94, 255);
+        color: white; 
+        border: none; 
+        border-radius: 5px;
+        width: 70px;
+      }
+    }
   }
 }

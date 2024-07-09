@@ -13,6 +13,11 @@ form {
   margin: 20px auto;
 }
 
+body form fieldset {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid rgb(155, 168, 181);
+}
 body form .form label {
   display: block;
   margin-bottom: 5px;
@@ -21,6 +26,8 @@ body form .form input {
   width: 98%;
   padding: 5px;
   margin-bottom: 8px;
+  border-radius: 3px;
+  border: 1px solid rgb(155, 168, 181);
 }
 body form .preferences .favorite-color label {
   display: block;
@@ -28,7 +35,10 @@ body form .preferences .favorite-color label {
 }
 body form .preferences .favorite-color input {
   width: 100%;
+  height: 40px;
+  padding: 5px;
   margin-bottom: 8px;
+  border: 1px solid rgb(155, 168, 181);
 }
 body form .preferences .hobby label {
   display: block;
@@ -36,6 +46,8 @@ body form .preferences .hobby label {
 }
 body form .preferences .hobby input {
   padding: 3px;
+  border-radius: 3px;
+  border: 1px solid rgb(155, 168, 181);
   margin-bottom: 8px;
 }
 body form .preferences .experience-level label {
@@ -44,6 +56,52 @@ body form .preferences .experience-level label {
 }
 body form .preferences .experience-level input {
   margin-bottom: 8px;
+}
+body form .contact-preferences .contact-method label {
+  display: block;
+  margin-bottom: 5px;
+}
+body form .contact-preferences .contact-method input {
+  width: 98%;
+  padding: 5px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  border: 1px solid rgb(155, 168, 181);
+}
+body form .contact-preferences .subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+body form .contact-preferences .subscribe input {
+  margin-bottom: 8px;
+}
+body form .preferences .gender-options {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+}
+body form .preferences .gender-options input {
+  margin-bottom: 8px;
+}
+body form .more-info {
+  margin-bottom: 8px;
+}
+body form .more-info textarea {
+  border-radius: 5px;
+  border: 1px solid rgb(155, 168, 181);
+}
+body form .upload-docs input {
+  border-radius: 5px;
+  border: 1px solid rgb(155, 168, 181);
+}
+body form .submission button {
+  padding: 8px;
+  background-color: rgb(0, 94, 255);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 70px;
 }
 
 /*# sourceMappingURL=styles.css.map */
