@@ -9,6 +9,94 @@
 <body>
     <form enctype="multipart/form-data" action="index.html" method="get">
         <!-- FORM FIELDS HERE -->
+        <fieldset class="form personal-info">
+            <legend>Personal Information</legend>
+            <div class="name">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="email">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="password">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="date-of-birth">
+                <label for="DOB">Date of Birth:</label>
+                <input type="date" name="DOB" id="DOB">
+            </div>
+        </fieldset>
+        <fieldset class="preferences">
+            <legend>Preferences</legend>
+            <div class="favorite-color">
+                <label for="color">Favorite Color:</label>
+                <input type="color" name="color" id="color">
+            </div>
+            <div class="hobby">
+                <label for="hobby">Hobby:</label>
+                <input type="text" name="hobby" id="hobby" list="favorite-hobby">
+                <datalist id="favorite-hobby">
+                    <option value="Drawing">Drawing</option>
+                    <option value="Swimming">Swimming</option>
+                    <option value="Dancing">Dancing</option>
+                </datalist>
+            </div>
+            <div class="experience-level">
+                <label for="exp">Experience Level:</label>
+                <input type="range" name="exp" id="exp" min="0" max="10">
+            </div>
+        </fieldset>
+        <fieldset class="contact-preferences">
+            <legend>Contact Preferences</legend>
+            <div class="contact-method">
+                <label for="contact">Preferred Contact Method:</label>
+                <input type="text" name="contact" id="contact" list="contact-method">
+                <datalist id="contact-method">
+                    <option value="Email">Email</option>
+                    <option value="Phone">Phone</option>
+                    <option value="Mail">Mail</option>
+                </datalist>
+            </div>
+            <div class="subscribe">
+                <label for="sub">Subscribe to Newsletter</label>
+                <input type="checkbox" name="sub" id="sub">
+            </div>
+        </fieldset>
+        <fieldset class="preferences">
+            <legend>Preferences</legend>
+            <label for="gender">Gender:</label>
+            <div class="gender-options">
+                <label>
+                    <input type="radio" name="gender" value="Male" checked>
+                    <span>Male</span>
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="Female">
+                    <span>Female</span>
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="Other">
+                    <span>Other</span>
+                </label>
+            </div>
+        </fieldset>
+        <fieldset class="form more-info">
+            <legend>More Information</legend>
+            <label for="bio">Bio:</label>
+            <textarea name="bio" id="bio" cols="65" rows="5"></textarea>
+        </fieldset>
+        <fieldset class="form upload-docs">
+            <legend>Upload Documents</legend>
+            <label for="files">Resume and other certificates:</label>
+            <input type="file" name="files" id="files" accept=".doc, .docx, .pdf, .jpg, .png" multiple>
+        </fieldset>
+        <fieldset class="form submission">
+            <legend>Submission</legend>
+            <button type="reset" class="btn">Reset</button>
+            <button type="submit" class="btn">Submit</button>
+        </fieldset>
     </form>
 </body>
 </html>
